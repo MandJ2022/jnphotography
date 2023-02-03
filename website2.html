@@ -1,0 +1,101 @@
+<!Doctype html >
+<html>
+    <head>
+        <meta charset="'UTF-8" />
+        <title>Portofolio Minter</title>
+        <link rel="stylesheet" href="myNewWebsite.css">
+    </head>
+<body>
+    <div class='container'>
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a Href="website2.html">Connect wallet</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a Href="website2.0About.html">Collections</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a Href="website2.html">About</a>
+                </div>
+              
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>Photography By @JNP</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portofolio-items-wrapper">
+
+                <div class="portofolio-item-wrapper">
+                    <div class="portofolio-img-background" style="background-image:url(IMG_4680.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            THE ORIGINALS.
+
+                            A collection of photographs from around the world.
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="portofolio-item-wrapper">
+                    <div class="portofolio-img-background" style="background-image:url(image00006.jpeg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            THE EDITED.
+
+                            A collection of edited photographs.
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="portofolio-item-wrapper">
+                    <div class="portofolio-img-background" style="background-image:url(IMG_1773.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            THE B&W.
+
+                            A collection of B&W photographs from around the world.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+</body>
+<script>
+    const portofolioItem = document.querySelectorAll('.portofolio-item-wrapper')
+
+    portofolioItem.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+    
+
+    
+</script>
+</html>
+
